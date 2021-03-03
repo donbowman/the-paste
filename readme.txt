@@ -3,9 +3,9 @@ Contributors: podpirate
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=F8NKC6TCASUXE
 Tags: paste, clipboard, image, editor, media
 Requires at least: 4.5.0
-Tested up to: 5.5
+Tested up to: 5.6.2
 Requires PHP: 5.3.0
-Stable tag: 1.0.7
+Stable tag: 2.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -41,6 +41,10 @@ Follow the standard [WordPress plugin installation procedere](https://codex.word
 3. ... and choose filename and format before you upload.
 
 == Changelog ==
+
+= 2.0.0 =
+* Enable php8.0
+* Update jquery
 
 = 1.0.7 =
 * Fix auto upload large images

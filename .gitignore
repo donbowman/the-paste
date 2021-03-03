@@ -2,9 +2,7 @@
 /tmp
 /tests/bin/tmp
 
-include/version.php
-css
-js
+the-paste
 
 # Numerous always-ignore extensions
 .diff

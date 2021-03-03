@@ -43,7 +43,7 @@ gulp.task('build:js',cb => {
 				.pipe(source(target))
 				.pipe(buffer())
 			    .pipe(uglify())
-				.pipe(gulp.dest("./js"));
+				.pipe(gulp.dest("./the-paste/js"));
 		} );
 
 	return es.merge(tasks).on('end',cb)
@@ -56,7 +56,7 @@ gulp.task('build:scss', cb => {
 			sass( config.sass )
 		)
 		.pipe( autoprefixer( { browsers: package.browserlist } ) )
-		.pipe( gulp.dest('./css'));
+		.pipe( gulp.dest('./the-paste/css'));
 });
 
 
@@ -77,7 +77,7 @@ gulp.task('dev:js', cb => {
 			    .pipe(sourcemaps.init({loadMaps:true}))
 			    .pipe(uglify())
 			    .pipe(sourcemaps.write())
-				.pipe(gulp.dest("./js"));
+				.pipe(gulp.dest("./the-paste/js"));
 		} );
 
 	return es.merge(tasks).on('end',cb)
@@ -91,7 +91,7 @@ gulp.task('dev:scss', cb => {
 		)
 		.pipe( autoprefixer( { browsers: package.browserlist } ) )
 		.pipe( sourcemaps.write( ) )
-		.pipe( gulp.dest('./css'));
+		.pipe( gulp.dest('./the-paste/css'));
 });
 
 
